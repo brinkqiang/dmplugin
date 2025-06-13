@@ -1,6 +1,5 @@
 #include "sampleplugin.h"
 #include <iostream>
-#include "dmiunknown.h"
 
 SamplePlugin::SamplePlugin() : m_initialized(false) {
     std::cout << "SamplePlugin构造函数调用" << std::endl;
