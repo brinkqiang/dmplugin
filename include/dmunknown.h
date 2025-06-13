@@ -1,5 +1,5 @@
-#ifndef __DMIUNKNOWN_H_INCLUDE__
-#define __DMIUNKNOWN_H_INCLUDE__
+#ifndef __DMUNKNOWN_H_INCLUDE__
+#define __DMUNKNOWN_H_INCLUDE__
 
 #include "dmos.h"
 #include "dmguid.h"
@@ -15,4 +15,4 @@ public:
 
 typedef DmModulePtr<IdmUnknown> dmUnknownPtr;
 
-#endif // __DMIUNKNOWN_H_INCLUDE__
+#endif // __DMUNKNOWN_H_INCLUDE__
