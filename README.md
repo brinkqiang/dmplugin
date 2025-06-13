@@ -59,22 +59,33 @@ cd dmplugin
 ### Creating a Plugin
 
 ```cpp
+#ifndef __SAMPLEPLUGIN_H_INCLUDE__
+#define __SAMPLEPLUGIN_H_INCLUDE__
+
 #include "dmplugin.h"
+#include "dmbaseunknown.h"
 
-class MyPlugin : public IdmPlugin {
+class SamplePlugin : virtual public DmBaseUnknown, virtual public IdmPlugin {
+private:
+    bool m_initialized;
+
 public:
-    MyPlugin() {}
-    virtual ~MyPlugin() {}
+    SamplePlugin();
+    virtual ~SamplePlugin();
 
-    virtual bool Execute(const std::string& command, const std::string& params) {
-        // Implement your plugin logic here
-        return true;
-    }
+    // IdmUnknown
+    virtual long DMAPI QueryInterface(const DmGuid& riid, void** ppvObject) override;
+
+    // IdmPlugin
+    virtual bool DMAPI Initialize() override;
+    virtual void DMAPI Shutdown() override;
+    virtual std::string DMAPI GetPluginName() const override;
+    virtual std::string DMAPI GetPluginVersion() const override;
+    virtual std::string DMAPI GetPluginDescription() const override;
+    virtual bool DMAPI Execute(const std::string& command, const std::string& params) override;
 };
 
-extern "C" DMEXPORT_DLL IdmPlugin* DMAPI CreatePlugin() {
-    return new MyPlugin();
-}
+#endif // __SAMPLEPLUGIN_H_INCLUDE__
 ```
 
 ### Loading and Using Plugins
