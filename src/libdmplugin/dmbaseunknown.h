@@ -1,7 +1,7 @@
 #ifndef __DMBASEUNKNOWN_H_INCLUDE__
 #define __DMBASEUNKNOWN_H_INCLUDE__
 
-#include "dmiunknown.h"
+#include "dmunknown.h"
 #include <atomic>
 
 class DmBaseUnknown : virtual public IdmUnknown {

@@ -1,7 +1,7 @@
 #ifndef __DMPLUGIN_H_INCLUDE__
 #define __DMPLUGIN_H_INCLUDE__
 
-#include "dmiunknown.h"
+#include "dmunknown.h"
 #include <string>
 
 class IdmPlugin : virtual public IdmUnknown {
