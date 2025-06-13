@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 #ifdef _WIN32
     const char* pluginPath = "sampleplugin.dll";
 #else
-    const char* pluginPath = "./libsampleplugin.so";
+    const char* pluginPath = "./sampleplugin.so";
 #endif
 
     if (!manager->LoadPlugin(pluginPath)) {
