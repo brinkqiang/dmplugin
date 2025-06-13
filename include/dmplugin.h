@@ -1,5 +1,5 @@
-#ifndef __DMIPLUGIN_H_INCLUDE__
-#define __DMIPLUGIN_H_INCLUDE__
+#ifndef __DMPLUGIN_H_INCLUDE__
+#define __DMPLUGIN_H_INCLUDE__
 
 #include "dmiunknown.h"
 #include <string>
@@ -17,4 +17,4 @@ public:
 
 typedef DmModulePtr<IdmPlugin> dmPluginPtr;
 
-#endif // __DMIPLUGIN_H_INCLUDE__
+#endif // __DMPLUGIN_H_INCLUDE__

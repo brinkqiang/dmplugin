@@ -1,7 +1,7 @@
 #ifndef __SAMPLEPLUGIN_H_INCLUDE__
 #define __SAMPLEPLUGIN_H_INCLUDE__
 
-#include "dmiplugin.h"
+#include "dmplugin.h"
 #include "dmbaseunknown.h"
 
 class SamplePlugin : virtual public DmBaseUnknown, virtual public IdmPlugin {

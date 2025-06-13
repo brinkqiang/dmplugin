@@ -3,7 +3,7 @@
 #include <vector>
 
 #include "dmpluginmanager.h" // 插件管理器接口
-#include "dmiplugin.h"       // 插件接口
+#include "dmplugin.h"       // 插件接口
 #include "dmguid.h"          // GUID定义
 #include "dmfix_win_utf8.h"
 

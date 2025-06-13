@@ -1,7 +1,7 @@
 #ifndef __DMPLUGINMANAGER_H_INCLUDE__
 #define __DMPLUGINMANAGER_H_INCLUDE__
 
-#include "dmiplugin.h"
+#include "dmplugin.h"
 #include <string>
 #include <vector>
 #include <map>
