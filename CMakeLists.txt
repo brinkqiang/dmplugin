@@ -25,9 +25,13 @@ ModuleImportAll("thirdparty")
 
 LibImport("libdmplugin" "src/libdmplugin")
 
+
 if(PROJECT_IS_TOP_LEVEL)
     ExeImport("test" "libdmplugin;dmtest")
-    ExeImport("examples" "libdmplugin")
+    DllImportDepends("sampleplugin" "plugins/sampleplugin" "libdmplugin")
+
+    ExeImport("loader" "libdmplugin")
+
 endif()
 
 AddInstall("libdmplugin" "${CMAKE_CURRENT_SOURCE_DIR}/include")
