@@ -20,7 +20,7 @@ protected:
 #ifdef _WIN32
         const char* pluginPath = "sampleplugin.dll";
 #else
-        const char* pluginPath = "./libsampleplugin.so";
+        const char* pluginPath = "./sampleplugin.so";
 #endif
         bool loaded = manager->LoadPlugin(pluginPath);
         ASSERT_TRUE(loaded) << "加载插件 " << pluginPath << " 失败";
