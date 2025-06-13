@@ -75,10 +75,9 @@ bool DmPluginManagerImpl::LoadPlugin(const std::string& pluginPath) {
     info.filePath = pluginPath;
     info.handle = handle;
     info.plugin = std::move(pluginPtr);
-
-    m_plugins[pluginName] = std::move(info);
     
     std::cout << "成功加载插件: " << pluginName << " v" << info.version << std::endl;
+    m_plugins[pluginName] = std::move(info);
     return true;
 }
 
