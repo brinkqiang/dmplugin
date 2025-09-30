@@ -107,6 +107,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contacts 📧
 
 - [brinkqiang](https://github.com/brinkqiang)
-- Email: brink.qiang@gmail.com
 
 ## Thanks 🙏
